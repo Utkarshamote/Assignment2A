@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <link rel="stylesheet" href="appintment.css">
+  
+</head>
+<body>
+    <section class="section hero" id="home" style="background-image: url('background.jpg')"
+        aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+    <h1>Book Appointment  </h1>
+    <form action="/submit-appointment" method="post">
+        <label for="name">Patient's Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Contact Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="doctor">Select Treatment:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="Type1">Dental check-ups</option>
+            <option value="Type2">Teeth cleaning</option>
+            <option value="Type3">Dental fillings</option>
+            <option value="Type4">Dental treatment for restoring teeth </option>
+            <option value="Type5">Root canal treatment </option>
+            <option value="Type6">Tooth removal</option>
+            <option value="Type7">Scale and polish</option>
+
+ 
+
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+        <select id="appointmentTime" required>
+            <option value="12:00">12:00 PM</option>
+            <option value="13:00">1:00 PM</option>
+            <option value="14:00">2:00 PM</option>
+            <option value="15:00">3:00 PM</option>
+            <option value="16:00">4:00 PM</option>
+          </select>
+
+        <button type="submit">Submit Appointment</button>
+    </form>
+    <script src="appointment.js"></script>
+</body>
+</html>
